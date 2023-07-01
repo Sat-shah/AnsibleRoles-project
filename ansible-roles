@@ -1,0 +1,8 @@
+- hosts: dev
+  strategy: free
+  tasks:
+    - name: INSTALLING TREE
+      shell: yum install tree -y
+
+    - name: INSTALLING docker
+      command: yum install docker -y
